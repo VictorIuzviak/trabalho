@@ -84,7 +84,7 @@
         }
 
         .imagem-reduzida {
-            width: 20%; /* Reduz a largura da imagem para 50% do seu contêiner */
+            width: 200px; /* Reduz a largura da imagem para 50% do seu contêiner */
             display: block; /* Faz a imagem ser um bloco, permitindo centralização */
             margin: 0 auto; /* Centraliza a imagem horizontalmente */
         }
