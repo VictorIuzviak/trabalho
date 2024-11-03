@@ -77,7 +77,7 @@ footer p {
 }
 
 .imagem-reduzida {
-    width: 20px; /* Define a largura da imagem como 200px */
+    width: 200px; /* Define a largura da imagem como 200px */
     height: auto; /* Mantém a proporção da altura da imagem */
     display: block; /* Faz a imagem ser um bloco, permitindo centralização */
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
