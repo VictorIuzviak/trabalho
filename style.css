@@ -1,84 +1,117 @@
-* {
-    box-sizing: border-box; /* Define o modelo de box-sizing para incluir padding e bordas no cálculo de largura e altura */
-}
+<!DOCTYPE html> <!-- Declara que este documento é do tipo HTML5 -->
+<html lang="pt-BR"> <!-- Inicia o documento HTML e define o idioma como português do Brasil -->
+<head> <!-- Início da seção de cabeçalho -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para dispositivos móveis -->
+    <title>Página Principal - Sinalização de Trânsito</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <style> <!-- Início da seção de estilo CSS interna -->
+        * {
+            box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura e altura dos elementos */
+        }
 
-body {
-    font-family: 'Arial', sans-serif; /* Define a fonte padrão como Arial */
-    margin: 0; /* Remove margens padrão do corpo */
-    padding: 0; /* Remove padding padrão do corpo */
-    background-color: #eef2f3; /* Define a cor de fundo do corpo */
-    color: #333; /* Define a cor do texto */
-}
+        body {
+            font-family: 'Arial', sans-serif; /* Define a fonte da página como Arial ou uma fonte padrão sans-serif */
+            margin: 0; /* Remove a margem padrão do corpo */
+            padding: 0; /* Remove o padding padrão do corpo */
+            background-color: #eef2f3; /* Define a cor de fundo da página */
+            color: #333; /* Define a cor do texto como um tom escuro de cinza */
+        }
 
-header {
-    background: #0056b3; /* Define a cor de fundo do cabeçalho */
-    color: #fff; /* Define a cor do texto do cabeçalho como branco */
-    padding: 20px 0; /* Adiciona padding vertical ao cabeçalho */
-    text-align: center; /* Centraliza o texto no cabeçalho */
-}
+        header {
+            background: #0056b3; /* Define a cor de fundo do cabeçalho */
+            color: #fff; /* Define a cor do texto no cabeçalho como branco */
+            padding: 20px 0; /* Adiciona padding vertical ao cabeçalho */
+            text-align: center; /* Centraliza o texto dentro do cabeçalho */
+        }
 
-header h1 {
-    margin: 0; /* Remove a margem do título principal */
-    font-size: 2.5em; /* Define o tamanho da fonte do título principal */
-}
+        header h1 {
+            margin: 0; /* Remove a margem do título principal */
+            font-size: 2.5em; /* Define o tamanho da fonte do título principal */
+        }
 
-nav {
-    margin: 15px 0; /* Adiciona margens acima e abaixo da navegação */
-}
+        nav {
+            margin: 15px 0; /* Adiciona margens acima e abaixo da navegação */
+        }
 
-nav ul {
-    list-style: none; /* Remove os marcadores da lista de navegação */
-    padding: 0; /* Remove o padding padrão da lista */
-}
+        nav ul {
+            list-style: none; /* Remove os marcadores da lista de navegação */
+            padding: 0; /* Remove o padding padrão da lista */
+        }
 
-nav ul li {
-    display: inline; /* Exibe os itens da lista em linha, lado a lado */
-    margin: 0 15px; /* Adiciona margens laterais entre os itens da lista */
-}
+        nav ul li {
+            display: inline; /* Exibe os itens da lista em linha, lado a lado */
+            margin: 0 15px; /* Adiciona margens laterais entre os itens da lista */
+        }
 
-nav ul li a {
-    color: #fff; /* Define a cor dos links como branco */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    padding: 10px 15px; /* Adiciona padding aos links */
-    border-radius: 5px; /* Arredonda os cantos dos links */
-    transition: background 0.3s; /* Adiciona uma transição suave para a cor de fundo */
-}
+        nav ul li a {
+            color: #fff; /* Define a cor dos links como branco */
+            text-decoration: none; /* Remove o sublinhado dos links */
+            padding: 10px 15px; /* Adiciona padding aos links */
+            border-radius: 5px; /* Arredonda os cantos dos links */
+            transition: background 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+        }
 
-nav ul li a:hover {
-    background: #004494; /* Muda a cor de fundo dos links ao passar o mouse */
-}
+        nav ul li a:hover {
+            background: #004494; /* Muda a cor de fundo dos links ao passar o mouse */
+        }
 
-main {
-    padding: 20px; /* Adiciona padding ao conteúdo principal */
-    max-width: 800px; /* Define a largura máxima do conteúdo principal */
-    margin: 20px auto; /* Centraliza o conteúdo principal horizontalmente */
-    background: #fff; /* Define a cor de fundo do conteúdo principal como branco */
-    border-radius: 8px; /* Arredonda os cantos do conteúdo principal */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao conteúdo principal */
-}
+        main {
+            padding: 20px; /* Adiciona padding ao conteúdo principal */
+            max-width: 800px; /* Define a largura máxima do conteúdo principal */
+            margin: 20px auto; /* Centraliza o conteúdo principal horizontalmente */
+            background: #fff; /* Define a cor de fundo do conteúdo principal como branco */
+            border-radius: 8px; /* Arredonda os cantos do conteúdo principal */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao conteúdo principal */
+        }
 
-h2 {
-    font-size: 2em; /* Define o tamanho da fonte do título secundário */
-    color: #0056b3; /* Define a cor do título secundário */
-}
+        h2 {
+            font-size: 2em; /* Define o tamanho da fonte do título secundário */
+            color: #0056b3; /* Define a cor do título secundário */
+        }
 
-footer {
-    text-align: center; /* Centraliza o texto do rodapé */
-    padding: 20px 0; /* Adiciona padding vertical ao rodapé */
-    background: #0056b3; /* Define a cor de fundo do rodapé */
-    color: #fff; /* Define a cor do texto no rodapé como branco */
-    position: relative; /* Define a posição do rodapé como relativa */
-    bottom: 0; /* Define a posição inferior do rodapé */
-    width: 100%; /* Define a largura do rodapé como 100% */
-}
+        footer {
+            text-align: center; /* Centraliza o texto do rodapé */
+            padding: 20px 0; /* Adiciona padding vertical ao rodapé */
+            background: #0056b3; /* Define a cor de fundo do rodapé */
+            color: #fff; /* Define a cor do texto no rodapé como branco */
+            position: relative; /* Define a posição do rodapé como relativa */
+            bottom: 0; /* Define a posição inferior do rodapé */
+            width: 100%; /* Define a largura do rodapé como 100% */
+        }
 
-footer p {
-    margin: 0; /* Remove a margem do parágrafo no rodapé */
-}
+        footer p {
+            margin: 0; /* Remove a margem do parágrafo no rodapé */
+        }
 
-.imagem-reduzida {
-    width: 200px; /* Define a largura da imagem como 200px */
-    height: auto; /* Mantém a proporção da altura da imagem */
-    display: block; /* Faz a imagem ser um bloco, permitindo centralização */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
-}
+        .imagem-reduzida {
+            width: 50%; /* Reduz a largura da imagem para 50% do seu contêiner */
+            display: block; /* Faz a imagem ser um bloco, permitindo centralização */
+            margin: 0 auto; /* Centraliza a imagem horizontalmente */
+        }
+    </style> <!-- Fim da seção de estilo -->
+</head> <!-- Fim da seção de cabeçalho -->
+<body> <!-- Início do corpo do documento -->
+    <header> <!-- Início da seção de cabeçalho da página -->
+        <h1>Sinalização de Trânsito</h1> <!-- Título principal da página -->
+        <nav> <!-- Início da barra de navegação -->
+            <ul> <!-- Início da lista não ordenada -->
+                <li><a href="index.html">Início</a></li> <!-- Link para a página inicial -->
+                <li><a href="Pages/sobre.html">Sobre</a></li> <!-- Link para a página "Sobre" -->
+                <li><a href="Pages/informacoes.html">Informações</a></li> <!-- Link para a página de informações -->
+                <li><a href="Pages/contato.html">Contato</a></li> <!-- Link para a página de contato -->
+            </ul> <!-- Fim da lista não ordenada -->
+        </nav> <!-- Fim da barra de navegação -->
+    </header> <!-- Fim da seção de cabeçalho -->
+    <main> <!-- Início da seção principal do conteúdo -->
+        <h2>Bem-vindo ao nosso site sobre Sinalização de Trânsito!</h2> <!-- Título secundário -->
+        <p>A sinalização de trânsito é um dos pilares fundamentais para a segurança viária. Aqui, você encontrará informações essenciais para entender a importância dos sinais e como eles contribuem para a segurança nas ruas e estradas.</p> <!-- Parágrafo informativo -->
+        <p>Navegue por nossas páginas para descobrir mais sobre a sinalização, suas normas e como você pode colaborar para um trânsito mais seguro.</p> <!-- Outro parágrafo informativo -->
+        <div style="text-align: center;"> <!-- Início de uma div para centralizar a imagem -->
+            <img src="significados-das-placas-de-trânsito.jpg" alt="Sinalização de Trânsito" class="imagem-reduzida" /> <!-- Tag de imagem com classe para aplicar estilos -->
+        </div> <!-- Fim da div -->
+    </main> <!-- Fim da seção principal -->
+    <footer> <!-- Início do rodapé -->
+        <p>&copy; 2024 Sinalização de Trânsito. Todos os direitos reservados.</p> <!-- Parágrafo do rodapé com direitos autorais -->
+    </footer> <!-- Fim do rodapé -->
+</body> <!-- Fim do corpo do documento -->
+</html> <!-- Fim do documento HTML -->
