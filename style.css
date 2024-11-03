@@ -1,77 +1,118 @@
-* {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Sinalização de Trânsito</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #eef2f3;
-    color: #333;
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            color: #333;
+        }
 
-header {
-    background: #0056b3;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+        header {
+            background: #0056b3;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
 
-nav {
-    margin: 15px 0;
-}
+        nav {
+            margin: 15px 0;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
 
-nav ul li a:hover {
-    background: #004494;
-}
+        nav ul li a:hover {
+            background: #004494;
+        }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-h2 {
-    font-size: 2em;
-    color: #0056b3;
-}
+        h2 {
+            font-size: 2em;
+            color: #0056b3;
+        }
 
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #0056b3;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #0056b3;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
 
-footer p {
-    margin: 0;
-}
+        footer p {
+            margin: 0;
+        }
+
+        .imagem-reduzida {
+            width: 50%; /* Reduz a largura da imagem para 50% do seu contêiner */
+            display: block; /* Faz a imagem ser um bloco, permitindo centralização */
+            margin: 0 auto; /* Centraliza a imagem horizontalmente */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sinalização de Trânsito</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Pages/sobre.html">Sobre</a></li>
+                <li><a href="Pages/informacoes.html">Informações</a></li>
+                <li><a href="Pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bem-vindo ao nosso site sobre Sinalização de Trânsito!</h2>
+        <p>A sinalização de trânsito é um dos pilares fundamentais para a segurança viária. Aqui, você encontrará informações essenciais para entender a importância dos sinais e como eles contribuem para a segurança nas ruas e estradas.</p>
+        <p>Navegue por nossas páginas para descobrir mais sobre a sinalização, suas normas e como você pode colaborar para um trânsito mais seguro.</p>
+        <div style="text-align: center;">
+            <img src="caminho/para/sua/imagem.jpg" alt="Descrição da imagem" class="imagem-reduzida" /> <!-- Substitua o caminho pela URL da sua imagem -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sinalização de Trânsito. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
